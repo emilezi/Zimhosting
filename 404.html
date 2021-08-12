@@ -1,0 +1,158 @@
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="icones/zimhostingicone.png">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Erreur 404</title>
+    </head>
+    
+    <body id=erreur>
+    
+    <div id="header">
+    
+    <center><h1>Erreur 404</h1></center>
+    
+    </div>
+    
+    <div id='nav' class='color-accueil'>
+    
+      <ul class="topnav">
+      
+      <li class="nav">
+      
+      <a href="index.php"> Accueil </a>
+      
+      </li>
+      
+      <li class="nav">
+      
+      <a href="forum/index.php"> Forum </a>
+      
+      <ul class="nav-content" style='background-color: #a19e97;'>
+      <li><a href="forum/my_sujets.php"> Mes sujets </a></li>
+      <li><a href="forum/new_sujet.php"> Nouveau sujet </a></li>
+      </ul>
+      
+      </li>
+      
+      <li class="nav">
+      
+      <a href="geek/index.php"> Geek </a>
+      <ul class="nav-content" style='background-color: #a19e97;'>
+      <li><a href="https://www.youtube.com/channel/UCHAM5J1G3PEqnlFgi_YdL1A"> La chaine Youtube officielle </a></li>
+      </ul>
+      
+      </li>
+      
+      <li class="nav">
+      
+      <a href="social/index.php"> Sociales </a>
+      
+      </li>
+      
+      <li class="nav">
+      
+      <a href="game/index.php"> Jeux </a>
+      
+      <ul class="nav-content" style='background-color: #a19e97;'>
+      <li><a href="game/hextris/"> Hextris </a></li>
+      <li><a href="game/snake/"> Snake </a></li>
+      </ul>
+      
+      </li>
+      
+      <li class="nav">
+      
+      <a href="blog/index.php"> Blogs </a>
+      
+      </li>
+      
+      <li class="nav">
+      
+      <a href="users/compte.php"> Compte </a>
+      
+      </li>
+      
+      <div id='searchbox'>
+      <form id='searchbox' method='get' action='search.php'>
+      <input type="search" name='q' size='15' placeholder='Rechercher' style='width:250px;' />
+      <input id='search-submit' type='submit' value='Search' />
+      </form>
+      </div>
+      
+      </ul>
+      
+      <ul class="topnav-responsive">
+      
+      <a href="index.php" class="active">Site</a>
+      </a>
+      
+      <a class="icon" onclick="display1()">
+      <div class="burger">
+      <span></span>
+      </div>
+      </a>
+      <div class="topnav-responsive" id="links1" style='background-color: #a19e97;'>
+      <li><a onclick="display2()"> A propos du site </a></li>
+      <li><a href="forum/index.php"> Forum </a></li>
+      <li><a href="geek/index.php"> Zone du geek </a></li>
+      <li><a href="social/index.php"> Social </a></li>
+      <li><a href="game/index.php"> Zone de jeux </a></li>
+      <li><a href="users/compte.php"> Compte </a></li>
+      <li><a href="blog/index.php"> Blogs</a></li>
+      <li><a href="zimidoc/index.php"> Zimidoc </a></li>
+        </div>
+      <div class="topnav-responsive" id="links2" style='background-color: #a19e97;'>
+      <li><a href="conditionsite.html"> Conditions générales d'utilisation </a></li>
+      <li><a href="contacts.php"> Me contacter </a></li>
+      <li><a href="http://zimhosting.fr:5000"> Zone d'hébergement </a></li>
+      <li><a href="community.html"> La communauté </a></li>
+      <li><a href="sources.php"> Sources </a></li>
+      </div>
+    
+      </ul>
+  
+       </div>
+
+    <script>
+
+          var x = document.getElementById("links1");
+          var y = document.getElementById("links2");
+          const burger = document.querySelector('.burger');
+       
+       
+          function display1() {
+               if (x.style.display === "block") {
+               x.style.display = "none";
+               y.style.display = "none";
+               burger.classList.remove('opened');
+            } else {
+               x.style.display = "block";
+               y.style.display = "none";
+               burger.classList.add('opened');
+            }
+            }
+       
+       
+          function display2() {
+               if (y.style.display === "block") {
+               y.style.display = "none";
+               x.style.display = "none";
+            } else {
+               y.style.display = "block";
+               x.style.display = "none";
+            }
+            }
+       
+    </script>
+    
+    <div class="contenue-large">
+     
+    <h2>Informations</h2>
+    <hr/>
+    <p>La page recherchée n'existe pas...</p>
+
+    </div>
+	 
+    </body>
+</html>
